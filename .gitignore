@@ -1,0 +1,5 @@
+node_modules/
+.el_key
+*.log
+chunks*/
+__pycache__/
