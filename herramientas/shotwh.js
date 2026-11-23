@@ -1,0 +1,1 @@
+const {chromium}=require('playwright');(async()=>{const [u,o,w,h]=process.argv.slice(2);const b=await chromium.launch();const p=await b.newPage({viewport:{width:+w,height:+h}});p.on('pageerror',e=>console.log('ERR',e.message));await p.goto('http://localhost:8765/'+u);await p.waitForFunction('window.DONE',{timeout:15000});await p.screenshot({path:o});await b.close();})();
