@@ -10,6 +10,19 @@ Formato: vertical 720×1280 (se exporta a 1080×1920), 70–100 s, voz en españ
 |---|-------|---------|
 | 01 | Samurái vs Ninja | `videos/01_samurai_vs_ninja/` |
 | 02 | Vikingo vs Caballero | `videos/02_vikingo_vs_caballero/` |
+| 03 | Espartano vs Gladiador | `videos/03_espartano_vs_gladiador/` |
+| 04 | Legionario vs Bárbaro | `videos/04_legionario_vs_barbaro/` |
+| 05 | Mongol vs Templario | `videos/05_mongol_vs_templario/` |
+| 06 | Pirata vs Mosquetero | `videos/06_pirata_vs_mosquetero/` |
+| 07 | Jaguar azteca vs Conquistador | `videos/07_jaguar_vs_conquistador/` |
+| 08 | Monje Shaolín vs Samurái | `videos/08_monje_vs_samurai/` |
+
+## Plantilla de duelos (desde el 03)
+
+Cada duelo nuevo es solo un archivo de configuración (`proj/d03.js` … `proj/d08.js`) sobre la plantilla común `proj/duel.js`:
+personajes (`gen2d.js`: spa, gla, leg, bar, mgl, tem, pir, mus, jag, con, mnk + sam/nin/vik/kni), escenario, palabras clave del guion,
+tipo de giro (`weapon`, `pistol`, `break`, `retreat`), presión y remate (`bash`, `sweep`, `arrow`, `disarm`), títulos, dato curioso y escena final.
+Portadas: `herramientas/thumb3.js` (fotograma limpio) + `herramientas/mk.py` (composición, un estilo distinto por vídeo).
 
 ## Estructura
 
