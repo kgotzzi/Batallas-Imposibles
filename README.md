@@ -9,6 +9,7 @@ Formato: vertical 720×1280 (se exporta a 1080×1920), 70–100 s, voz en españ
 | # | Duelo | Carpeta |
 |---|-------|---------|
 | 01 | Samurái vs Ninja | `videos/01_samurai_vs_ninja/` |
+| 02 | Vikingo vs Caballero | `videos/02_vikingo_vs_caballero/` |
 
 ## Estructura
 
@@ -16,9 +17,10 @@ Formato: vertical 720×1280 (se exporta a 1080×1920), 70–100 s, voz en españ
 proj/          Motor de animación (se sirve en localhost:8765)
   e2d.js         utilidades base (texto, easing, fondos)
   stick2d.js     esqueleto articulado (POSES, track, solve), efectos de pelea y escenarios
-  puppet2d.js    personajes detallados: puppetFighter(ctx, 'sam'|'nin', estado, t, suelo, escala)
+  puppet2d.js    personajes detallados: puppetFighter(ctx, 'sam'|'nin'|'vik'|'kni', estado, t, suelo, escala)
+                 escenarios: castleRoof (tejado japonés), battlefield (campo de batalla)
   dark2d.js      capsD (subtítulos grandes), shake, glitch...
-  spup.js        línea de tiempo del vídeo 01
+  spup.js / svik.js  línea de tiempo de cada vídeo (01, 02...)
   videoSpup.html página que se renderiza
   spup.mp3 / wpup.json  voz y tiempos de cada palabra
 herramientas/  Render y audio
